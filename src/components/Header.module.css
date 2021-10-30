@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-size: 3rem;
+  font-weight: 500;
+}
