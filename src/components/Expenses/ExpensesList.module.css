@@ -8,3 +8,9 @@
 .info {
   text-align: center;
 }
+
+@media only screen and (max-width: 57.5em) {
+  .expenses {
+    grid-template-columns: 1fr;
+  }
+}

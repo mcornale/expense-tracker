@@ -28,3 +28,19 @@
 .button--hidden {
   visibility: hidden;
 }
+
+@media only screen and (max-width: 57.5em) {
+  .button--add {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .button--cancel {
+    flex: 1 0 100%;
+  }
+
+  .button--confirm {
+    margin-top: 3rem;
+    flex: 1 0 100%;
+  }
+}

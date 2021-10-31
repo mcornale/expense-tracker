@@ -33,3 +33,17 @@
   justify-content: flex-end;
   gap: 1rem;
 }
+
+@media only screen and (max-width: 57.5em) {
+  .expense-form {
+    grid-column: auto;
+  }
+
+  .expense-form__actions {
+    flex-wrap: wrap-reverse;
+  }
+
+  .expense-form__controls {
+    grid-template-columns: 1fr;
+  }
+}
