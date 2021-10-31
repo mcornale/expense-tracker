@@ -7,6 +7,10 @@
   font-weight: 500;
 }
 
+.button--arrow {
+  background-color: #efefef;
+}
+
 .button--add {
   background-color: #fff;
   justify-self: self-end;
@@ -19,4 +23,8 @@
 .button--confirm {
   background-color: var(--accent-color);
   color: #fff;
+}
+
+.button--hidden {
+  visibility: hidden;
 }

@@ -7,12 +7,19 @@ const Expenses = (props) => {
   const currentYear = new Date().getFullYear();
 
   const [selectedYear, setSelectedYear] = useState(currentYear);
+  const [nextYearAvailable, setNextYearAvailable] = useState(false);
 
-  const selectNextYearHandler = () => {
-    setSelectedYear((year) => year + 1);
+  const selectNextYearHandler = (e) => {
+    e.preventDefault();
+    setSelectedYear((year) => {
+      if (year + 1 === currentYear) setNextYearAvailable(false);
+      return year + 1;
+    });
   };
 
-  const selectPrevYearHandler = () => {
+  const selectPrevYearHandler = (e) => {
+    e.preventDefault();
+    setNextYearAvailable(true);
     setSelectedYear((year) => year - 1);
   };
 
@@ -26,6 +33,7 @@ const Expenses = (props) => {
         onSelectNextYear={selectNextYearHandler}
         onSelectPrevYear={selectPrevYearHandler}
         selectedYear={selectedYear}
+        nextYearAvailable={nextYearAvailable}
       />
       <ExpensesChart items={filteredExpenses} />
       <ExpensesList items={filteredExpenses} />
