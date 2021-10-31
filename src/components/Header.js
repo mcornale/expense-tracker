@@ -3,7 +3,7 @@ import AddExpenseForm from './AddExpenseForm';
 import { useState } from 'react';
 import Button from './UI/Button';
 
-const Header = () => {
+const Header = (props) => {
   const [isFormVisible, setIsFormVisible] = useState(false);
 
   const changeFormVisibilityHandler = () => {
@@ -16,7 +16,12 @@ const Header = () => {
       <Button onClick={changeFormVisibilityHandler} type='add'>
         Add Expense
       </Button>
-      {isFormVisible && <AddExpenseForm />}
+      {isFormVisible && (
+        <AddExpenseForm
+          onAddExpense={props.onAddExpense}
+          onFormCloseHandler={changeFormVisibilityHandler}
+        />
+      )}
     </header>
   );
 };

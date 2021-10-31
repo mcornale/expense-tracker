@@ -7,6 +7,7 @@ const ExpensesList = (props) => {
       <div className={style['expenses']}>
         {props.items.map((item) => (
           <ExpenseItem
+            key={item.id}
             date={item.date}
             title={item.title}
             amount={item.amount}

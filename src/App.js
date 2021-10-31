@@ -1,5 +1,6 @@
 import Expenses from './components/Expenses/Expenses';
 import Header from './components/Header';
+import { useState } from 'react';
 
 const INITIAL_EXPENSES = [
   {
@@ -29,10 +30,16 @@ const INITIAL_EXPENSES = [
 ];
 
 function App() {
+  const [expensesList, setExpensesList] = useState(INITIAL_EXPENSES);
+
+  const addExpenseHandler = (newItem) => {
+    setExpensesList((prevExpensesList) => [newItem, ...prevExpensesList]);
+  };
+
   return (
     <>
-      <Header />
-      <Expenses items={INITIAL_EXPENSES} />
+      <Header onAddExpense={addExpenseHandler} />
+      <Expenses items={expensesList} />
     </>
   );
 }
