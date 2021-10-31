@@ -1,0 +1,35 @@
+.expense-form {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  grid-column: span 2;
+}
+
+.expense-form__controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.expense-form__label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.expense-form__input {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #efefef;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+.expense-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

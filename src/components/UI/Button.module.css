@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.button--add {
+  background-color: #fff;
+  justify-self: self-end;
+}
+
+.button--cancel {
+  background-color: #fff;
+}
+
+.button--confirm {
+  background-color: var(--accent-color);
+  color: #fff;
+}

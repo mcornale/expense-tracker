@@ -1,0 +1,24 @@
+.expense-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.expense-item__date {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.expense-item__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-item__title {
+  font-weight: 500;
+}

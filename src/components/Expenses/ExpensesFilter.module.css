@@ -1,0 +1,11 @@
+.expenses-filter {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}

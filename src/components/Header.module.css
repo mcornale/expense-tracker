@@ -1,9 +1,21 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .header__logo {
   font-size: 3rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
+
+/* .header__logo::before {
+  content: '';
+  display: inline-block;
+  background-color: var(--accent-color);
+  width: 0.5rem;
+  height: 100%;
+  border-radius: 1rem;
+} */
