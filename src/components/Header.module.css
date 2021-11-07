@@ -1,12 +1,26 @@
 .header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__logo {
-  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.6rem;
   font-weight: 500;
-  gap: 2rem;
+  gap: 1rem;
+  background-color: #6e5fc2;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.header__logo img {
+  max-height: 6rem;
+}
+
+.header__logo p {
+  padding-right: 2rem;
 }
 
 @media only screen and (max-width: 57.5em) {

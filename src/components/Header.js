@@ -1,6 +1,7 @@
 import style from './Header.module.css';
 import AddExpenseForm from './AddExpenseForm';
 import Button from './UI/Button';
+import logoSrc from '../assets/images/logo.svg';
 import { useState } from 'react';
 
 const Header = (props) => {
@@ -12,7 +13,10 @@ const Header = (props) => {
 
   return (
     <header className={style['header']}>
-      <p className={style['header__logo']}>ExpenseTracker</p>
+      <div className={style['header__logo']}>
+        <img src={logoSrc} alt='logo' />
+        <p>ExpenseTracker</p>
+      </div>
       <Button onClick={changeFormVisibilityHandler} type='add'>
         Add Expense
       </Button>

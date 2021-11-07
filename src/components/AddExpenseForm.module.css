@@ -4,6 +4,7 @@
   padding: 3rem;
   margin-top: 3rem;
   grid-column: span 2;
+  flex: 1 0 100%;
 }
 
 .expense-form__controls {

@@ -1,5 +1,5 @@
 .chart-bar__bar {
-  height: 18rem;
+  height: 16rem;
   background-color: #efefef;
   border-radius: 1rem;
   width: 1rem;
@@ -14,6 +14,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+  transition: all 0.3s;
 }
 
 .chart-bar__label {

@@ -1,6 +1,6 @@
 import Button from '../UI/Button';
-import leftArrow from '../../images/arrow-left.svg';
-import rightArrow from '../../images/arrow-right.svg';
+import leftArrow from '../../assets/images/arrow-left.svg';
+import rightArrow from '../../assets/images/arrow-right.svg';
 import style from './ExpensesFilter.module.css';
 
 const ExpensesFilter = (props) => {
