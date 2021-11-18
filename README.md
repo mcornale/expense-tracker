@@ -1,3 +1,7 @@
-# Expense Tracker App
+# ExpenseTracker App
 
-This is a simple project that I did to practice with React.
+This is an app that I designed and coded to practice with React.
+
+### Screenshot
+
+![](./screenshot.png)
